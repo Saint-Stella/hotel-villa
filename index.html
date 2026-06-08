@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>大和高田市のホテル | ヴィラ【公式】</title>
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<!-- 👇 フォントの読み込みを最高級の明朝体「Noto Serif JP」と美しい欧文フォントに変更しました -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Serif+JP:wght@300;400;500;700&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
     --primary: #d4af37; /* サンセットゴールド */
@@ -25,8 +26,9 @@
   body {
     background: var(--dark); /* サイト全体を深い黒背景に */
     color: var(--text-light); /* テキスト全体を明るい色に */
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 400;
+    /* 👇 全体のフォントを美しい「Noto Serif JP」の明朝体に変更しました */
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 300;
     overflow-x: hidden;
     line-height: 1.6;
   }
@@ -36,6 +38,7 @@
     position: fixed; top: 0; left: 0; right: 0; z-index: 200;
     background: var(--accent);
     text-align: center; padding: 12px 16px;
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: .88rem; letter-spacing: .05em; color: #fff;
     display: flex; align-items: center; justify-content: center; gap: 20px;
     flex-wrap: wrap;
@@ -43,6 +46,7 @@
     font-weight: 500;
   }
   .price-top-banner strong {
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 1.1rem; color: #fff; letter-spacing: .02em;
     background: rgba(255,255,255,0.25);
     padding: 2px 8px; border-radius: 4px; margin-left: 4px;
@@ -57,12 +61,14 @@
     backdrop-filter: blur(6px);
   }
   .nav-logo {
-    font-family: 'Comfortaa', cursive;
-    font-size: 1.6rem; font-weight: 600; letter-spacing: .05em; color: var(--primary);
+    /* 👇 ロゴの英字部分をハイブランドのような伝統的な高級フォントに指定 */
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem; font-weight: 600; letter-spacing: .15em; color: var(--primary);
   }
   .nav-right { display: flex; align-items: center; gap: 36px; }
   .nav-links { display: flex; gap: 28px; list-style: none; }
   .nav-links a {
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: .8rem; font-weight: 500; letter-spacing: .05em; color: var(--text-muted);
     text-decoration: none; transition: color .3s;
   }
@@ -71,12 +77,14 @@
     display: flex; flex-direction: column; align-items: flex-end;
   }
   .nav-tel a {
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 1.15rem; font-weight: 700; letter-spacing: .02em; color: var(--primary);
     text-decoration: none; line-height: 1.1;
     transition: opacity .3s;
   }
   .nav-tel a:hover { opacity: 0.8; }
   .nav-tel small {
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: .6rem; color: var(--text-muted); letter-spacing: .05em; margin-top: 2px;
   }
 
@@ -108,19 +116,20 @@
     z-index: 2;
   }
   .hero-ornament {
+    font-family: 'Cormorant Garamond', serif;
     font-size: .8rem; font-weight: 700; letter-spacing: .3em; color: var(--accent);
     text-transform: uppercase; margin-bottom: 20px;
   }
   .hero-title {
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Cormorant Garamond', serif;
     font-size: clamp(3.5rem, 8vw, 6.5rem);
-    font-weight: 600; letter-spacing: .02em;
+    font-weight: 300; letter-spacing: .05em;
     line-height: 1; color: var(--primary);
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
   }
   .hero-sub {
     font-size: clamp(1rem, 2vw, 1.2rem);
-    font-weight: 500; color: var(--text-light); letter-spacing: .1em;
+    font-weight: 400; color: var(--text-light); letter-spacing: .1em;
     margin-top: 24px; line-height: 1.8;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
   }
@@ -137,6 +146,7 @@
   .badge {
     border: 1px solid rgba(212,175,55,.35);
     padding: 8px 18px;
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: .75rem; font-weight: 500; letter-spacing: .05em; color: var(--primary-light);
     background: rgba(13, 13, 13, 0.75);
     border-radius: 50px;
@@ -157,28 +167,32 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
   }
   .price-appeal-card .day-label {
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: .75rem; font-weight: 700; letter-spacing: .1em; color: var(--text-muted);
     margin-bottom: 8px; display: block;
   }
   .price-appeal-card .price-big {
-    font-size: 2.2rem; font-weight: 700; color: var(--primary); line-height: 1;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.6rem; font-weight: 600; color: var(--primary); line-height: 1;
     letter-spacing: -0.02em;
   }
-  .price-appeal-card .price-big span { font-size: 1rem; font-weight: 400; color: var(--text-light); margin-left: 2px; }
+  .price-appeal-card .price-big span { font-family: 'Noto Serif JP', serif; font-size: 1rem; font-weight: 400; color: var(--text-light); margin-left: 2px; }
   .price-appeal-card .price-note {
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: .75rem; color: var(--text-muted);
     margin-top: 8px; display: block; font-weight: 500;
   }
 
   section { padding: 100px 24px; }
   .section-label {
+    font-family: 'Cormorant Garamond', serif;
     font-size: .75rem; font-weight: 700; letter-spacing: .2em;
     text-transform: uppercase; color: var(--primary);
     display: block; margin-bottom: 12px;
   }
   .section-title {
     font-size: clamp(1.8rem, 4vw, 2.6rem);
-    font-weight: 700; letter-spacing: .05em;
+    font-weight: 400; letter-spacing: .05em;
     line-height: 1.3;
     color: var(--text-light);
   }
@@ -222,22 +236,26 @@
     font-size: .85rem;
   }
   th {
+    font-family: 'Noto Sans JP', sans-serif;
     color: var(--text-muted); font-weight: 700;
     background: rgba(212,175,55,0.03);
   }
-  td { color: var(--text-light); font-weight: 500; }
+  td { color: var(--text-light); font-weight: 400; }
   td.price-val {
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 1rem; font-weight: 700; color: var(--primary);
   }
   td.price-val.member {
     color: var(--member-color);
   }
   .member-badge {
+    font-family: 'Noto Sans JP', sans-serif;
     background: var(--member-color); color: #fff; font-size: 0.65rem;
     padding: 2px 6px; border-radius: 3px; font-weight: 700; margin-left: 4px;
     vertical-align: middle;
   }
   .price-note {
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: .75rem; color: var(--text-muted);
     margin-top: 24px; line-height: 1.8; font-weight: 500;
   }
@@ -261,11 +279,11 @@
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   }
   .flow-step-num {
-    font-family: 'Comfortaa', cursive;
-    font-size: .75rem; font-weight: 600; letter-spacing: .1em; color: var(--primary); margin-bottom: 4px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: .85rem; font-weight: 600; letter-spacing: .1em; color: var(--primary); margin-bottom: 4px;
   }
   .flow-step h4 { font-size: .95rem; font-weight: 700; color: var(--text-light); }
-  .flow-step p { font-size: .8rem; color: var(--text-muted); line-height: 1.6; margin-top: 4px; }
+  .flow-step p { font-family: 'Noto Sans JP', sans-serif; font-size: .8rem; color: var(--text-muted); line-height: 1.6; margin-top: 4px; }
 
   /* ── ROOMS（横並び3枚統合） ── */
   #rooms { background: var(--dark-2); }
@@ -350,7 +368,8 @@
     display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-top: 48px;
   }
   .access-info dt {
-    font-size: .75rem; font-weight: 700; letter-spacing: .1em; color: var(--primary); margin-bottom: 4px; margin-top: 24px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: .85rem; font-weight: 700; letter-spacing: .1em; color: var(--primary); margin-bottom: 4px; margin-top: 24px;
   }
   .access-info dt:first-child { margin-top: 0; }
   .access-info dd { font-size: .9rem; color: var(--text-light); line-height: 1.7; font-weight: 500; }
@@ -379,11 +398,12 @@
   .cta-band h2 { font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 700; color: var(--text-light); margin-bottom: 8px; }
   .cta-band p { font-size: .9rem; color: var(--text-muted); margin-bottom: 28px; font-weight: 500; }
   .cta-tel {
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 700; color: var(--primary);
     letter-spacing: .02em; display: block; text-decoration: none; margin-bottom: 8px;
   }
   .cta-tel:hover { opacity: 0.8; }
-  .cta-tel-note { font-size: .7rem; color: var(--text-muted); }
+  .cta-tel-note { font-family: 'Noto Sans JP', sans-serif; font-size: .7rem; color: var(--text-muted); }
 
   /* ── FOOTER ── */
   footer {
@@ -391,9 +411,9 @@
     border-top: 1px solid rgba(255,255,255,0.05);
   }
   footer .footer-logo {
-    font-family: 'Comfortaa', cursive; font-size: 1.4rem; font-weight: 600; color: var(--primary); margin-bottom: 12px;
+    font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; color: var(--primary); margin-bottom: 12px;
   }
-  footer p { font-size: .7rem; color: var(--text-muted); letter-spacing: .05em; }
+  footer p { font-family: 'Noto Sans JP', sans-serif; font-size: .7rem; color: var(--text-muted); letter-spacing: .05em; }
 
   /* ── RESPONSIVE ── */
   @media (max-width: 768px) {
@@ -415,7 +435,7 @@
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">ホテル ヴィラ</div>
+  <div class="nav-logo">VILLA</div>
   <ul class="nav-links">
     <li><a href="#price">料金案内</a></li>
     <li><a href="#privacy">ご利用方法</a></li>
@@ -433,7 +453,7 @@
 <!-- HERO -->
 <section class="hero">
   <span class="hero-ornament">奈良県大和高田市 ── ホテル</span>
-  <h1 class="hero-title">ヴィラ</h1>
+  <h1 class="hero-title">VILLA</h1>
   <p class="hero-sub">
     24時間いつでも、あなたに合わせた自由な滞在スタイル。<br>
     明るく清潔感のある空間で、心地よいひとときを。
@@ -601,7 +621,7 @@
     <div class="privacy-layout">
       <div class="privacy-text">
         <p>当ホテルは、お客様がリラックスしてプライベートな時間を過ごせるよう、シンプルでわかりやすい入室システムを採用しております。</p>
-        <p>清掃が行き届いた明るい空間を、ご自身のペースで自由にご利用いただけます。お仕事帰りの休憩や、時間を忘れてゆっくり過ごしたい夜にも、いつでも安心してお越しください。</p>
+        <p>清傷が行き届いた明るい空間を、ご自身のペースで自由にご利用いただけます。お仕事帰りの休憩や、時間を忘れてゆっくり過ごしたい夜にも、いつでも安心してお越しください。</p>
       </div>
       <div class="privacy-visual">
         <div class="flow-steps">
@@ -752,7 +772,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">ホテル ヴィラ</div>
+  <div class="footer-logo">VILLA</div>
   <p>〒635-0041 奈良県大和高田市田井466-4 TEL: 0745-22-5520</p>
   <p style="margin-top:10px; opacity: 0.6;">© VILLA. All rights reserved.</p>
 </footer>
