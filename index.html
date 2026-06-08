@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VILLA（ヴィラ）｜大和高田市のレジャーホテル【公式】</title>
+<title>大和高田市のホテル | ヴィラ【公式】</title>
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -258,27 +258,44 @@
   .flow-step h4 { font-size: .95rem; font-weight: 700; color: var(--text-dark); }
   .flow-step p { font-size: .8rem; color: var(--text-muted); line-height: 1.6; margin-top: 4px; }
 
-  /* ── ROOMS ── */
+  /* ── ROOMS（横並び3枚に修正） ── */
   #rooms { background: var(--bg-white); }
-  .rooms-grid {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-top: 48px;
+  .room-main-card {
+    background: var(--bg-light); border-radius: 20px; overflow: hidden;
+    border: 1px solid rgba(160,150,140,0.08);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.02);
+    margin-top: 48px; padding: 32px;
   }
-  .room-card {
-    background: var(--bg-light); border-radius: 16px; overflow: hidden;
-    border: 1px solid rgba(160,150,140,0.06);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.02);
+  .room-images-triple {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 28px;
+  }
+  @media (max-width: 768px) {
+    .room-images-triple {
+      grid-template-columns: 1fr; /* スマホでは自動で縦1列になります */
+    }
   }
   .room-img-wrap {
     position: relative; width: 100%; height: 230px; background: #eadecc;
+    border-radius: 12px; overflow: hidden;
     display: flex; align-items: center; justify-content: center;
+    border: 1px solid rgba(160,150,140,0.1);
+  }
+  .room-img-wrap img {
+    width: 100%; height: 100%; object-fit: cover;
+    display: block;
   }
   .room-img-placeholder {
-    font-size: .9rem; font-weight: 500; letter-spacing: .05em; color: var(--text-muted);
-    text-align: center; padding: 20px;
+    font-size: .85rem; font-weight: 500; letter-spacing: .05em; color: var(--text-muted);
+    text-align: center; padding: 16px;
   }
-  .room-info { padding: 24px; }
-  .room-info h3 { font-size: 1.1rem; font-weight: 700; color: var(--text-dark); }
-  .room-info p { font-size: .8rem; color: var(--text-muted); line-height: 1.7; margin-top: 8px; }
+  .room-info-box {
+    text-align: center; max-width: 800px; margin: 0 auto;
+  }
+  .room-info-box h3 { font-size: 1.35rem; font-weight: 700; color: var(--text-dark); margin-bottom: 12px; }
+  .room-info-box p { font-size: .9rem; color: var(--text-muted); line-height: 1.8; }
 
   /* ── SCENE TARGET ── */
   #target { background: var(--bg-light); }
@@ -585,26 +602,26 @@
   <div class="container">
     <span class="section-label">お部屋</span>
     <h2 class="section-title">お部屋のご紹介</h2>
-    <div class="rooms-grid">
-      <div class="room-card">
+    
+    <div class="room-main-card">
+      <div class="room-images-triple">
         <div class="room-img-wrap">
-          <div class="room-img-placeholder">✨ 落ち着いた明るい客室空間<br><span style="font-size:0.75rem; color:var(--text-muted);">（画像差し替え可能エリア）</span></div>
+          <div class="room-img-placeholder">📸 お部屋の写真 01<br><span style="font-size:0.7rem; color:var(--text-muted);">（画像差し替え可能）</span></div>
         </div>
-        <div class="room-info">
-          <h3>快適なプライベートルーム</h3>
-          <p>隅々まで丁寧に清掃が行き届いた、明るく過ごしやすいお部屋。心地よい広さのベッドと必要十分な設備を完備しています。</p>
+        <div class="room-img-wrap">
+          <div class="room-img-placeholder">📸 お部屋の写真 02<br><span style="font-size:0.7rem; color:var(--text-muted);">（画像差し替え可能）</span></div>
+        </div>
+        <div class="room-img-wrap">
+          <div class="room-img-placeholder">📸 お部屋の写真 03<br><span style="font-size:0.7rem; color:var(--text-muted);">（画像差し替え可能）</span></div>
         </div>
       </div>
-      <div class="room-card">
-        <div class="room-img-wrap">
-          <div class="room-img-placeholder">🛋️ 昭和レトロな心地よさ<br><span style="font-size:0.75rem; color:var(--text-muted);">（画像差し替え可能エリア）</span></div>
-        </div>
-        <div class="room-info">
-          <h3>レトロでアットホームな空間</h3>
-          <p>どこか懐かしさを感じるレトロな雰囲気が魅力。リピーターのお客様からも「落ち着く空間」として大変ご好評をいただいております。</p>
-        </div>
+
+      <div class="room-info-box">
+        <h3>快適なプライベートルーム</h3>
+        <p>隅々まで丁寧に清掃が行き届いた、明るく過ごしやすいお部屋。どこか懐かしさを感じるレトロでアットホームな雰囲気が魅力です。心地よい広さのベッドと充実した設備を完備し、リピーターのお客様からも「一番落ち着くプライベート空間」として大変ご好評をいただいております。</p>
       </div>
     </div>
+
   </div>
 </section>
 
