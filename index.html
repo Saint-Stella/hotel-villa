@@ -10,11 +10,11 @@
     --primary: #d4af37; /* サンセットゴールド */
     --primary-light: #f4ebd0; /* ソフトアイボリー */
     --accent: #e29b7a; /* テラコッタベージュ */
-    --dark: #0d0d0d;   /* 👇 セイントステラと同じ漆黒ベースに変更 */
-    --dark-2: #181818; /* 👇 セイントステラと同じダークグレー */
-    --dark-3: #232323; /* 👇 セイントステラと同じカード用グレー */
-    --text-light: #e8e2d9; /* 👇 暗い背景で見えやすい明るいテキスト色 */
-    --text-muted: #9a9080; /* 👇 落ち着いた補足テキスト色 */
+    --dark: #0d0d0d;   /* セイントステラと同じ漆黒ベース */
+    --dark-2: #181818; /* セイントステラと同じダークグレー */
+    --dark-3: #232323; /* セイントステラと同じカード用グレー */
+    --text-light: #e8e2d9; /* 暗い背景で見えやすい明るいテキスト色 */
+    --text-muted: #9a9080; /* 落ち着いた補足テキスト色 */
     --member-color: #2a7b6c; /* 会員価格用の優しいエメラルド */
   }
 
@@ -23,8 +23,8 @@
   html { scroll-behavior: smooth; }
 
   body {
-    background: var(--dark); /* 👇 サイト全体を深い黒背景に */
-    color: var(--text-light); /* 👇 テキスト全体を明るい色に */
+    background: var(--dark); /* サイト全体を深い黒背景に */
+    color: var(--text-light); /* テキスト全体を明るい色に */
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 400;
     overflow-x: hidden;
@@ -80,23 +80,26 @@
     font-size: .6rem; color: var(--text-muted); letter-spacing: .05em; margin-top: 2px;
   }
 
-  /* ── HERO（セイントステラ風の高級感あるグラデーション背景） ── */
+  /* ── HERO（セイントステラのグラデーションに外観写真を融合） ── */
   .hero {
     min-height: 100vh;
     display: flex; flex-direction: column;
     align-items: center; justify-content: center;
     position: relative;
-    background: radial-gradient(ellipse at 60% 40%, #1a0f0a 0%, var(--dark) 65%);
+    /* 👇 セイントステラと同じ指定の外観写真を背景に設定し、中央に美しく配置します */
+    background-image: url('fa46dbb7-fd74-40fc-928c-e3a458ab6cd3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     text-align: center;
     padding: 160px 24px 80px;
     overflow: hidden;
   }
+  /* 👇 セイントステラと同等の深い黒・茶系のグラデーションを重ね、写真を綺麗に溶け込ませます */
   .hero::before {
     content: '';
     position: absolute; inset: 0;
-    background:
-      radial-gradient(circle at 20% 80%, rgba(226,155,122,.07) 0%, transparent 50%),
-      radial-gradient(circle at 80% 20%, rgba(212,175,55,.06) 0%, transparent 45%);
+    background: radial-gradient(ellipse at 60% 40%, rgba(26, 15, 10, 0.75) 0%, rgba(13, 13, 13, 0.9) 65%);
     pointer-events: none;
     z-index: 1;
   }
@@ -182,7 +185,7 @@
   .container { max-width: 1100px; margin: 0 auto; }
 
   /* ── PRICE SECTION ── */
-  #price { background: var(--dark-2); } /* ダーク仕様に変更 */
+  #price { background: var(--dark-2); } 
   .price-intro-text {
     font-size: .95rem; line-height: 1.8; color: var(--text-muted); margin: 20px 0 0 0; max-width: 750px;
   }
@@ -669,7 +672,7 @@
       <!-- シーン 2 -->
       <div class="target-card">
         <div class="target-img-wrap">
-          <img src="0_Boris-Jovanovic.pngg" alt="ビジネス・お一人様に" onerror="this.style.opacity='0'">
+          <img src="0_Boris-Jovanovic.png" alt="ビジネス・お一人様に" onerror="this.style.opacity='0'">
         </div>
         <h3>ビジネス・お一人様に</h3>
         <p>ビジネスホテル代わりに、出張時のご宿泊にも最適。リーズナブルな価格でリフレッシュの時間を。</p>
@@ -749,7 +752,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">ヴィラ</div>
+  <div class="footer-logo">ホテル ヴィラ</div>
   <p>〒635-0041 奈良県大和高田市田井466-4 TEL: 0745-22-5520</p>
   <p style="margin-top:10px; opacity: 0.6;">© VILLA. All rights reserved.</p>
 </footer>
