@@ -80,24 +80,33 @@
     font-size: .6rem; color: var(--text-muted); letter-spacing: .05em; margin-top: 2px;
   }
 
-  /* ── HERO ── */
+  /* ── HERO（背景を外観画像に変更・調整） ── */
   .hero {
-    min-height: 90vh;
+    min-height: 95vh;
     display: flex; flex-direction: column;
     align-items: center; justify-content: center;
     position: relative;
-    background: linear-gradient(135deg, #fbf7f0 0%, #f4ebd0 100%);
+    /* 👇 背景画像として外観写真を設定し、中央に美しく配置します */
+    background-image: url('f77c0058-0aaa-41c9-9167-2005296ae379.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     text-align: center;
-    padding: 160px 24px 80px;
+    padding: 180px 24px 80px;
     overflow: hidden;
   }
+  /* 👇 写真の上に明るい白ベースのグラデーションフィルターを重ね、文字をハッキリ読めるようにします */
   .hero::before {
     content: '';
     position: absolute; inset: 0;
-    background:
-      radial-gradient(circle at 10% 20%, rgba(226,155,122,.1) 0%, transparent 40%),
-      radial-gradient(circle at 90% 80%, rgba(212,175,55,.12) 0%, transparent 50%);
+    background: linear-gradient(135deg, rgba(253, 252, 247, 0.9) 0%, rgba(244, 235, 208, 0.75) 100%);
     pointer-events: none;
+    z-index: 1;
+  }
+  /* HERO内のコンテンツがフィルターの上に正しく表示されるようにします */
+  .hero-ornament, .hero-title, .hero-sub, .hero-divider, .hero-badges, .hero-price-appeal {
+    position: relative;
+    z-index: 2;
   }
   .hero-ornament {
     font-size: .8rem; font-weight: 700; letter-spacing: .3em; color: var(--accent);
@@ -404,7 +413,7 @@
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">ヴィラ</div>
+  <div class="nav-logo">VILLA</div>
   <ul class="nav-links">
     <li><a href="#price">料金案内</a></li>
     <li><a href="#privacy">ご利用方法</a></li>
@@ -422,7 +431,7 @@
 <!-- HERO -->
 <section class="hero">
   <span class="hero-ornament">奈良県大和高田市 ── レジャーホテル</span>
-  <h1 class="hero-title">ヴィラ</h1>
+  <h1 class="hero-title">VILLA</h1>
   <p class="hero-sub">
     24時間いつでも、あなたに合わせた自由な滞在スタイル。<br>
     明るく清潔感のある空間で、心地よいひとときを。
@@ -461,7 +470,7 @@
     <span class="section-label">料金案内</span>
     <h2 class="section-title">ご利用料金</h2>
     <p class="price-intro-text">
-      ヴィラでは、大和高田エリアで<strong style="color:var(--accent); font-weight:700;">地域最安値クラス</strong>の圧倒的なリーズナブルさを追求。
+      VILLA（ヴィラ）では、大和高田エリアで<strong style="color:var(--accent); font-weight:700;">地域最安値クラス</strong>の圧倒的なリーズナブルさを追求。
       24時間いつでもお客様のスケジュールに合わせて、無駄なくお好みの滞在プランをお選びいただけます。
     </p>
 
@@ -655,7 +664,7 @@
           <img src="target1.jpg" alt="お出かけ・デートに" onerror="this.style.opacity='0'">
         </div>
         <h3>お出かけ・デートに</h3>
-        <p>ドライブやお出かけ帰りの休憩に. 24時間いつでも対応の便利なプランで一休みしていただけます。</p>
+        <p>ドライブやお出かけ帰りの休憩に。24時間いつでも対応の便利なプランで一休みしていただけます。</p>
       </div>
 
       <!-- シーン 2 -->
@@ -684,7 +693,7 @@
 <section id="appeal">
   <div class="container">
     <span class="section-label">特徴</span>
-    <h2 class="section-title">ヴィラが選ばれる理由</h2>
+    <h2 class="section-title">VILLAが選ばれる理由</h2>
     <div class="appeal-grid">
       <div class="appeal-card">
         <h3>圧倒的な低価格</h3>
@@ -741,7 +750,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">ヴィラ</div>
+  <div class="footer-logo">VILLA</div>
   <p>〒635-0041 奈良県大和高田市田井466-4 TEL: 0745-22-5520</p>
   <p style="margin-top:10px; opacity: 0.6;">© VILLA. All rights reserved.</p>
 </footer>
