@@ -14,7 +14,7 @@
 <title>大和高田市のホテル | ヴィラ【公式】</title>
 <!-- 👇 フォントの読み込みを最高級の明朝体「Noto Serif JP」と美しい欧文フォントに変更しました -->
 <!-- SEO メタタグ -->
-<meta name="description" content="奈良県大和高田市のホテル「ヴィラ」公式サイト。24時間いつでもチェックイン可能、駐車場無料19台完備。会員価格2時間¥3,300〜。ビジネス利用・お一人様・カップルどなたでも歓迎。大和高田エリア最安値クラスの明るく清潔なホテルです。">
+<meta name="description" content="2026年11月16日グランドリニューアルオープン！奈良県大和高田市のホテル「ヴィラ」公式サイト。24時間いつでもチェックイン可能、駐車場無料19台完備。会員価格2時間¥3,300〜。ビジネス利用・お一人様・カップルどなたでも歓迎。大和高田エリア最安値クラスの明るく清潔なホテルです。">
 <meta name="keywords" content="大和高田市 ホテル, 大和高田市 宿泊, 大和高田市 ビジネスホテル, 大和高田市 一人泊, 奈良 ホテル 安い, 大和高田市 ラブホテル, ヴィラ, 駐車場無料 ホテル 大和高田, 出張 ホテル 大和高田, 24時間 ホテル 奈良">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://saint-stella.github.io/hotel-villa/">
@@ -442,25 +442,153 @@
     .access-layout { grid-template-columns: 1fr; gap: 40px; }
     th, td { padding: 12px 16px; }
   }
+
+  /* ===== 2026.11 GRAND RENEWAL ADDITIONS ===== */
+  :root { --red: #b3122b; --red-deep: #7d0c1e; --gold-grad: linear-gradient(180deg,#fff6c9 0%,#f4d36b 45%,#c99a1d 100%); }
+  section { scroll-margin-top: 110px; }
+  .hero-open, .hero-cta { position: relative; z-index: 2; }
+  .hero-open { margin-bottom: 28px; }
+  .open-ribbon { display:inline-block; font-family:'Noto Sans JP',sans-serif; font-size:.8rem; font-weight:700; letter-spacing:.25em; color:#fff; background:linear-gradient(90deg,var(--red-deep),var(--red),var(--red-deep)); border:1px solid var(--primary); padding:6px 22px; border-radius:50px; box-shadow:0 0 18px rgba(179,18,43,.7); }
+  .open-date { font-family:'Cormorant Garamond','Noto Serif JP',serif; font-weight:700; line-height:1; margin-top:18px; display:flex; align-items:baseline; justify-content:center; gap:.15em; flex-wrap:wrap; }
+  .open-date .y { font-size:clamp(1.4rem,4vw,2.4rem); color:var(--primary-light); }
+  .open-date .md { font-size:clamp(4rem,13vw,8.5rem); background:var(--gold-grad); -webkit-background-clip:text; background-clip:text; color:transparent; filter:drop-shadow(0 4px 14px rgba(0,0,0,.8)) drop-shadow(0 0 22px rgba(212,175,55,.45)); }
+  .open-date .md small { font-family:'Noto Serif JP',serif; font-size:.4em; margin:0 .05em; }
+  .open-date .dow { font-family:'Noto Serif JP',serif; font-size:clamp(1.2rem,3.5vw,2rem); color:var(--primary); border:2px solid var(--primary); border-radius:50%; width:1.9em; height:1.9em; display:inline-flex; align-items:center; justify-content:center; }
+  .open-title { font-family:'Noto Serif JP',serif; font-weight:700; font-size:clamp(2rem,7vw,4.6rem); line-height:1.15; margin-top:14px; letter-spacing:.04em; color:#fff; -webkit-text-stroke:0; text-shadow:0 0 6px var(--red),0 0 24px var(--red),0 4px 12px rgba(0,0,0,.9); animation:glow 2.6s ease-in-out infinite alternate; }
+  .open-title em { font-style:normal; color:#ffd966; }
+  .open-sub { font-size:clamp(.9rem,2vw,1.1rem); color:var(--text-light); margin-top:14px; letter-spacing:.08em; text-shadow:0 2px 8px #000; }
+  @keyframes glow { from { text-shadow:0 0 4px var(--red),0 0 14px var(--red),0 4px 12px rgba(0,0,0,.9);} to { text-shadow:0 0 8px #ff3b5c,0 0 34px var(--red),0 4px 12px rgba(0,0,0,.9);} }
+  @media (prefers-reduced-motion: reduce) { .open-title { animation:none; } }
+  .hero-cta { display:flex; flex-wrap:wrap; justify-content:center; gap:14px; margin-top:36px; }
+  .btn { font-family:'Noto Sans JP',sans-serif; display:inline-flex; flex-direction:column; align-items:center; justify-content:center; gap:2px; min-width:230px; padding:14px 26px; border-radius:50px; text-decoration:none; font-weight:700; font-size:.95rem; letter-spacing:.04em; transition:transform .25s, box-shadow .25s, opacity .25s; }
+  .btn small { font-size:.68rem; font-weight:500; opacity:.9; }
+  .btn:hover { transform:translateY(-3px); }
+  .btn-tel { background:var(--gold-grad); color:#2a1a00; box-shadow:0 6px 20px rgba(212,175,55,.4); font-size:1.15rem; }
+  .btn-couples { background:#e8467c; color:#fff; box-shadow:0 6px 20px rgba(232,70,124,.4); }
+  .btn-happy { background:#2a7bd1; color:#fff; box-shadow:0 6px 20px rgba(42,123,209,.4); }
+  .btn-line { border:1px solid var(--primary); color:var(--primary); background:transparent; }
+
+  /* PLAN */
+  #plan { background: linear-gradient(180deg,#1a0a0e 0%,var(--dark) 100%); text-align:center; }
+  #plan .section-title .hl { color:#ffd966; }
+  .same-price { display:inline-block; margin-top:22px; padding:10px 26px; font-family:'Noto Sans JP',sans-serif; font-weight:700; color:#2a1a00; background:var(--gold-grad); border-radius:50px; box-shadow:0 4px 16px rgba(212,175,55,.35); }
+  .plan-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:28px; margin-top:44px; text-align:left; }
+  .plan-card { border-radius:20px; overflow:hidden; background:var(--dark-2); border:2px solid var(--primary); box-shadow:0 8px 28px rgba(0,0,0,.5); }
+  .plan-head { padding:18px 24px; font-size:1.35rem; font-weight:700; color:#fff; text-align:center; }
+  .plan-card.rest .plan-head { background:linear-gradient(90deg,var(--red-deep),var(--red)); }
+  .plan-card.stay .plan-head { background:linear-gradient(90deg,#0d2d5e,#1d5aa8); }
+  .plan-head small { display:block; font-family:'Noto Sans JP',sans-serif; font-size:.78rem; font-weight:500; margin-top:4px; opacity:.95; }
+  .plan-cols { display:grid; grid-template-columns:1fr 1fr; }
+  .plan-col { padding:22px 12px; text-align:center; }
+  .plan-col + .plan-col { border-left:1px solid rgba(255,255,255,.1); }
+  .plan-col .d { font-family:'Noto Sans JP',sans-serif; font-size:.78rem; font-weight:700; color:var(--text-muted); }
+  .plan-col .p { font-family:'Noto Sans JP',sans-serif; font-size:clamp(1.9rem,5vw,2.6rem); font-weight:900; color:#ff4d63; line-height:1.2; margin-top:6px; }
+  .plan-card.stay .p { color:#ffd966; }
+  .plan-col .p span { font-size:.5em; }
+  .plan-memo { padding:0 20px 18px; text-align:center; font-family:'Noto Sans JP',sans-serif; font-size:.74rem; color:var(--text-muted); }
+  .bf-banner { margin-top:36px; padding:30px 24px; border-radius:20px; text-align:center; background:linear-gradient(135deg,var(--red-deep),var(--red) 55%,var(--red-deep)); border:2px solid var(--primary); box-shadow:0 8px 28px rgba(179,18,43,.4); }
+  .bf-banner .s { font-size:clamp(1rem,2.5vw,1.3rem); color:#fff; letter-spacing:.1em; }
+  .bf-banner .b { font-size:clamp(2.2rem,7vw,3.6rem); font-weight:900; line-height:1.2; background:var(--gold-grad); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .bf-banner .m { margin-top:10px; font-family:'Noto Sans JP',sans-serif; font-size:.9rem; color:#fff; }
+  .feature-chips { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:14px; margin-top:28px; text-align:left; }
+  .feature-chip { background:var(--dark-3); border:1px solid rgba(212,175,55,.3); border-radius:14px; padding:16px 20px; font-family:'Noto Sans JP',sans-serif; font-size:.85rem; line-height:1.6; }
+  .feature-chip b { color:var(--primary); }
+
+  /* ROOM GALLERY */
+  .room-lead { max-width:760px; margin-top:20px; font-size:.95rem; line-height:1.9; color:var(--text-muted); }
+  .room-count { display:inline-block; margin-top:14px; font-family:'Noto Sans JP',sans-serif; font-size:.8rem; font-weight:700; color:var(--primary); border:1px solid var(--primary); border-radius:50px; padding:4px 16px; }
+  .room-gallery { display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:14px; margin-top:36px; }
+  .room-tile { position:relative; aspect-ratio:4/3; border-radius:12px; overflow:hidden; background:var(--dark); border:1px solid rgba(255,255,255,.06); }
+  .room-tile .ph { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px; font-family:'Cormorant Garamond',serif; color:var(--text-muted); font-size:.75rem; letter-spacing:.15em; background:repeating-linear-gradient(45deg,#1b1b1b,#1b1b1b 10px,#202020 10px,#202020 20px); }
+  .room-tile img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:.92; transition:transform .5s; }
+  .room-tile:hover img { transform:scale(1.05); }
+  .room-tile .no { position:absolute; left:8px; bottom:8px; z-index:2; font-family:'Cormorant Garamond',serif; font-weight:600; letter-spacing:.12em; font-size:.85rem; color:#fff; background:rgba(13,13,13,.75); border:1px solid rgba(212,175,55,.4); padding:2px 10px; border-radius:50px; }
+  .room-note { margin-top:26px; text-align:center; font-family:'Noto Sans JP',sans-serif; font-size:.8rem; color:var(--text-muted); }
+
+  /* FOOD */
+  #food { background:var(--dark); }
+  .food-layout { display:grid; grid-template-columns:1.3fr 1fr; gap:40px; margin-top:40px; align-items:start; }
+  .food-img { width:100%; border-radius:16px; border:1px solid rgba(212,175,55,.3); box-shadow:0 8px 24px rgba(0,0,0,.5); display:block; }
+  .food-list { list-style:none; background:var(--dark-2); border-radius:16px; padding:10px 24px; border:1px solid rgba(255,255,255,.05); }
+  .food-list li { display:flex; justify-content:space-between; gap:12px; padding:11px 0; border-bottom:1px dashed rgba(255,255,255,.1); font-family:'Noto Sans JP',sans-serif; font-size:.9rem; }
+  .food-list li:last-child { border-bottom:none; }
+  .food-list b { color:var(--primary); font-weight:700; white-space:nowrap; }
+  .food-bf { margin-top:22px; padding:18px 20px; border-radius:14px; background:linear-gradient(135deg,var(--red-deep),var(--red)); color:#fff; text-align:center; font-weight:700; line-height:1.7; border:1px solid var(--primary); }
+  .food-bf small { display:block; font-family:'Noto Sans JP',sans-serif; font-weight:500; font-size:.78rem; opacity:.95; }
+  @media (max-width:768px) { .food-layout { grid-template-columns:1fr; } }
+
+  /* RESERVE */
+  #reserve { background:var(--dark-2); }
+  .reserve-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:22px; margin-top:44px; }
+  .reserve-card { background:var(--dark-3); border-radius:18px; padding:30px 24px; text-align:center; border:1px solid rgba(255,255,255,.07); display:flex; flex-direction:column; align-items:center; gap:10px; }
+  .reserve-card.main { border:2px solid var(--primary); box-shadow:0 8px 26px rgba(212,175,55,.2); }
+  .reserve-card h3 { font-size:1.1rem; color:var(--primary); }
+  .reserve-card p { font-family:'Noto Sans JP',sans-serif; font-size:.8rem; color:var(--text-muted); line-height:1.7; flex:1; }
+  .reserve-card .btn { width:100%; }
+  .tag-rec { font-family:'Noto Sans JP',sans-serif; font-size:.68rem; font-weight:700; background:var(--red); color:#fff; padding:2px 12px; border-radius:50px; letter-spacing:.1em; }
+  .couples-about { margin-top:40px; padding:32px; border-radius:18px; background:var(--dark); border:1px solid rgba(232,70,124,.45); }
+  .couples-about h3 { font-size:1.2rem; color:#ff7aa8; margin-bottom:12px; }
+  .couples-about p { font-family:'Noto Sans JP',sans-serif; font-size:.88rem; line-height:1.9; color:var(--text-light); }
+  .couples-points { list-style:none; display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:10px; margin:18px 0; font-family:'Noto Sans JP',sans-serif; font-size:.8rem; color:var(--text-muted); }
+  .couples-points li::before { content:'✓ '; color:#ff7aa8; font-weight:700; }
+  .couples-links { display:flex; flex-wrap:wrap; gap:10px; margin-top:16px; }
+  .couples-links a { font-family:'Noto Sans JP',sans-serif; font-size:.78rem; font-weight:700; padding:8px 18px; border-radius:50px; border:1px solid #e8467c; color:#ff7aa8; text-decoration:none; transition:background .25s,color .25s; }
+  .couples-links a:hover { background:#e8467c; color:#fff; }
+  .age-note { margin-top:20px; text-align:center; font-family:'Noto Sans JP',sans-serif; font-size:.75rem; color:var(--text-muted); }
+  .cta-band .hero-cta { margin-top:26px; }
+  @media (max-width:768px) { .btn { min-width:100%; } nav .nav-links { display:none; } }
+
+  /* MEMBER */
+  #member { background: var(--dark); }
+  .member-layout { display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:44px; }
+  .member-hero { grid-column:1/-1; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:24px; padding:32px 36px; border-radius:18px; background:linear-gradient(135deg,#1a0f12,#232323); border:1px solid rgba(212,175,55,.45); }
+  .member-hero .lead { font-size:1.05rem; color:var(--text-light); line-height:1.8; }
+  .member-hero .lead b { color:var(--primary); }
+  .member-fee { text-align:center; font-family:'Noto Sans JP',sans-serif; }
+  .member-fee small { display:block; font-size:.75rem; color:var(--text-muted); letter-spacing:.1em; }
+  .member-fee .n { font-family:'Cormorant Garamond',serif; font-size:3.2rem; font-weight:600; line-height:1.1; background:var(--gold-grad); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .member-fee .n span { font-family:'Noto Serif JP',serif; font-size:1.1rem; }
+  .member-card { background:var(--dark-2); border:1px solid rgba(255,255,255,.06); border-radius:16px; padding:28px; }
+  .member-card h3 { font-size:1rem; color:var(--primary); margin-bottom:14px; padding-bottom:10px; border-bottom:1px solid rgba(212,175,55,.2); letter-spacing:.05em; }
+  .member-card p, .member-card li { font-family:'Noto Sans JP',sans-serif; font-size:.85rem; line-height:1.9; color:var(--text-muted); }
+  .member-card ul { list-style:none; }
+  .member-card li { display:flex; justify-content:space-between; border-bottom:1px dashed rgba(255,255,255,.08); padding:6px 0; color:var(--text-light); }
+  .member-card li b { color:var(--primary); }
+  .member-card .em { color:var(--accent); font-weight:700; }
+  .member-card.wide { grid-column:1/-1; text-align:center; }
+  .member-card.wide .big { font-size:1.15rem; color:var(--text-light); margin-top:4px; }
+  .member-card.wide .big b { color:var(--primary); font-size:1.5rem; }
+  @media (max-width:768px) { .member-layout { grid-template-columns:1fr; } .member-hero { padding:24px; } }
+
+  /* 人数アピール */
+  .ninzu { position:relative; z-index:2; margin-top:34px; padding:18px 28px; max-width:760px; border:2px solid var(--primary); border-radius:18px; background:linear-gradient(135deg,rgba(125,12,30,.85),rgba(13,13,13,.9)); box-shadow:0 0 26px rgba(212,175,55,.3); text-align:center; }
+  .ninzu .t { font-size:clamp(1.15rem,3.6vw,1.9rem); font-weight:700; color:#fff; letter-spacing:.06em; line-height:1.5; }
+  .ninzu .t b { background:var(--gold-grad); -webkit-background-clip:text; background-clip:text; color:transparent; font-size:1.25em; }
+  .ninzu .s { margin-top:6px; font-family:'Noto Sans JP',sans-serif; font-size:.8rem; color:var(--primary-light); }
+  .ninzu.inline { margin:36px auto 0; }
 </style>
 </head>
 <body>
 
 <!-- PRICE TOP BANNER -->
 <div class="price-top-banner">
-  <span>✨ 24時間いつでも選べる滞在プラン！メンバー特典あり 🅿️ 駐車場完備</span>
-  <span>短時間のご利用も大歓迎！ <strong>2時間 ¥3,300〜（会員）</strong></span>
+  <span>🎉 <strong>11/16(月) グランドリニューアルオープン！</strong></span>
+  <span>全室同一料金 ／ 宿泊予約で<strong>朝食無料</strong></span>
 </div>
 
 <!-- NAV -->
 <nav>
   <div class="nav-logo">ホテル ヴィラ</div>
   <ul class="nav-links">
+    <li><a href="#plan">リニューアルプラン</a></li>
     <li><a href="#price">料金案内</a></li>
+    <li><a href="#member">メンバーズ</a></li>
     <li><a href="#privacy">ご利用方法</a></li>
     <li><a href="#rooms">お部屋</a></li>
+    <li><a href="#food">フードメニュー</a></li>
     <li><a href="#target">ご利用シーン</a></li>
     <li><a href="#appeal">ホテルの特徴</a></li>
+    <li><a href="#reserve">ご予約</a></li>
     <li><a href="#access">アクセス</a></li>
   </ul>
   <div class="nav-tel">
@@ -471,6 +599,12 @@
 
 <!-- HERO -->
 <section class="hero">
+  <div class="hero-open">
+    <span class="open-ribbon">GRAND RENEWAL OPEN</span>
+    <div class="open-date"><span class="y">2026</span><span class="md">11<small>月</small>16<small>日</small></span><span class="dow">月</span></div>
+    <div class="open-title">グランドリニューアル<br><em>オープン！</em></div>
+    <p class="open-sub">生まれ変わったホテル ヴィラで、もっと快適に、もっと楽しいひとときを――</p>
+  </div>
   <span class="hero-ornament">奈良県大和高田市 ── ホテル</span>
   <h1 class="hero-title">ヴィラ</h1>
   <p class="hero-sub">
@@ -501,6 +635,55 @@
       <span class="day-label">駐車場料金</span>
       <div class="price-big" style="font-size:1.8rem; padding-top:4px;">無料完備</div>
       <span class="price-note">ハイルーフ不可 / 全19台</span>
+    </div>
+  </div>
+  <div class="ninzu">
+    <div class="t">2名様でも<b>3名様</b>でも、<br>人数で<b>料金は変わりません！</b></div>
+    <div class="s">追加料金なしで最大3名様までご利用OK ／ お友達同士・同性のご利用も大歓迎</div>
+  </div>
+  <div class="hero-cta">
+    <a class="btn btn-tel" href="tel:0745225520">📞 電話で予約 0745-22-5520<small>当日のご連絡も大歓迎・24時間受付</small></a>
+    <a class="btn btn-couples" href="https://couples.jp/hotel-details/53732/plan" target="_blank" rel="noopener">カップルズで予約<small>ネット予約はこちら</small></a>
+    <a class="btn btn-happy" href="https://happyhotel.jp/hotels/611918" target="_blank" rel="noopener">ハッピーホテルで予約<small>ネット予約はこちら</small></a>
+  </div>
+</section>
+
+<!-- PLAN -->
+<section id="plan">
+  <div class="container">
+    <span class="section-label">Renewal Plan</span>
+    <h2 class="section-title">リニューアル記念<br><span class="hl">お得な休憩プラン・宿泊プラン</span></h2>
+    <span class="same-price">★ 全室同一料金 ★ お好みのお部屋をお選びいただけます</span>
+
+    <div class="plan-grid">
+      <div class="plan-card rest">
+        <div class="plan-head">5時間の休憩プラン<small>お仕事帰り・ドライブ帰りにぴったり</small></div>
+        <div class="plan-cols">
+          <div class="plan-col"><div class="d">月〜木</div><div class="p">4,950<span>円</span></div></div>
+          <div class="plan-col"><div class="d">金・土・日・祝・祝前日</div><div class="p">5,400<span>円</span></div></div>
+        </div>
+        <p class="plan-memo">※メンバー価格はさらにお得（月〜木 ¥4,400／金・土・日・祝・祝前日 ¥4,900）</p>
+      </div>
+      <div class="plan-card stay">
+        <div class="plan-head">宿泊プラン<small>20:00〜翌12:00（最大16時間）</small></div>
+        <div class="plan-cols">
+          <div class="plan-col"><div class="d">月〜木</div><div class="p">7,500<span>円</span></div></div>
+          <div class="plan-col"><div class="d">金・土・日・祝・祝前日</div><div class="p">7,800<span>円</span></div></div>
+        </div>
+        <p class="plan-memo">※ゆったり最大16時間のロングステイ</p>
+      </div>
+    </div>
+
+    <div class="bf-banner">
+      <div class="s">宿泊予約のお客様に</div>
+      <div class="b">朝食無料！</div>
+      <div class="m">朝食メニュー：トースト・バター ／ コーンスープ ／ ゆで卵</div>
+    </div>
+
+    <div class="feature-chips">
+      <div class="feature-chip"><b>24時間いつでもチェックインOK</b><br>リーズナブルでご利用しやすい料金設定です。</div>
+      <div class="feature-chip"><b>車で3分！イオンモール橿原が近い</b><br>お買い物やお食事のあとにも便利な立地です。</div>
+      <div class="feature-chip"><b>カップルはもちろん、観光・ドライブ・ビジネスにも</b><br>お一人様・同性同士のご利用も歓迎です。</div>
     </div>
   </div>
 </section>
@@ -627,8 +810,40 @@
     
     <p class="price-note">
       ※ 24時間いつでもお好みの滞在プランが選べます。<br>
-      ※ 表示金額はすべて税込価格です。 ※ メンバー特典もご用意しております（200円〜400円OFF等）。
+      ※ 表示金額はすべて税込価格です。 ※ 12時間を超える場合は30分ごとに¥550の延長料金がかかります。 ※ メンバー特典もご用意しております（200円〜400円OFF等）。
     </p>
+  </div>
+</section>
+
+<!-- MEMBER -->
+<section id="member">
+  <div class="container">
+    <span class="section-label">Members</span>
+    <h2 class="section-title">メンバーズ案内</h2>
+    <div class="member-layout">
+      <div class="member-hero">
+        <p class="lead"><b>メンバーズカード</b>をお持ちいただくと、会員価格でのご利用に加え、<br>ご利用ごとにポイントが貯まってお得に。<br>ご希望の方は<b>フロント9番</b>にお電話いただくか、客室のコンビニボックスでお買い求めください。</p>
+        <div class="member-fee"><small>メンバーズカード（購入時のみ）</small><div class="n">550<span>円</span></div></div>
+      </div>
+      <div class="member-card">
+        <h3>カードのご利用方法</h3>
+        <p>ご精算前に<span class="em">必ずカードを挿入</span>してください。後から入れると割引できません。</p>
+        <p style="margin-top:10px;">※カードを紛失された場合、カード及びポイントの再発行はできませんので、大切に保管をお願いいたします。</p>
+      </div>
+      <div class="member-card">
+        <h3>ポイントの加算</h3>
+        <ul>
+          <li><span>休憩・サービスタイム</span><b>1ポイント</b></li>
+          <li><span>宿泊</span><b>2ポイント</b></li>
+        </ul>
+      </div>
+      <div class="member-card wide">
+        <h3>ポイントの換点交換</h3>
+        <p>1回のご利用につき、10ポイントのみご利用いただけます。</p>
+        <p class="big"><b>10ポイント</b>のご利用で <b>500円</b> の割引になります。</p>
+        <p style="margin-top:10px;">ポイント交換後、残りのポイントはそのまま残りますので、引き続きポイントを貯めてください。<br>※ポイントの有効期限は1年です。</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -640,7 +855,7 @@
     <div class="privacy-layout">
       <div class="privacy-text">
         <p>当ホテルは、お客様がリラックスしてプライベートな時間を過ごせるよう、シンプルでわかりやすい入室システムを採用しております。</p>
-        <p>清傷が行き届いた明るい空間を、ご自身のペースで自由にご利用いただけます。お仕事帰りの休憩や、時間を忘れてゆっくり過ごしたい夜にも、いつでも安心してお越しください。</p>
+        <p>清掃が行き届いた明るい空間を、ご自身のペースで自由にご利用いただけます。お仕事帰りの休憩や、時間を忘れてゆっくり過ごしたい夜にも、いつでも安心してお越しください。</p>
       </div>
       <div class="privacy-visual">
         <div class="flow-steps">
@@ -668,27 +883,112 @@
 <!-- ROOMS -->
 <section id="rooms">
   <div class="container">
-    <span class="section-label">お部屋</span>
-    <h2 class="section-title">お部屋のご紹介</h2>
-    
-    <div class="room-main-card">
-      <div class="room-images-triple">
-        <div class="room-img-wrap">
-          <img src="f77c0058-0aaa-41c9-9167-2005296ae379.png" alt="お部屋の写真 01">
-        </div>
-        <div class="room-img-wrap">
-          <img src="043e3d0c-bac3-44eb-91ff-9dd406bae9d4.png" alt="お部屋の写真 02">
-        </div>
-        <div class="room-img-wrap">
-          <img src="4bfb8120-6fc0-4ba5-b9d4-3262d0a17f38.png" alt="お部屋の写真 03">
-        </div>
-      </div>
+    <span class="section-label">Rooms</span>
+    <h2 class="section-title">全19室のお部屋をご紹介</h2>
+    <p class="room-lead">シンプルで落ち着いたお部屋から、赤と黒を基調とした大胆なお部屋、レトロでポップな雰囲気のお部屋まで、さまざまなタイプをご用意。<strong style="color:var(--accent);">全室同一料金</strong>だから、お好みのお部屋を気兼ねなくお選びいただけます。</p>
+    <span class="room-count">全19室 ／ 全室同一料金</span>
+    <div class="room-gallery">
+      <div class="room-tile"><div class="ph"><span>ROOM 01</span><span>PHOTO</span></div><img src="f77c0058-0aaa-41c9-9167-2005296ae379.png" alt="ホテル ヴィラ 客室 01" loading="lazy" onerror="this.remove()"><span class="no">ROOM 01</span></div>
+      <div class="room-tile"><div class="ph"><span>ROOM 02</span><span>PHOTO</span></div><img src="043e3d0c-bac3-44eb-91ff-9dd406bae9d4.png" alt="ホテル ヴィラ 客室 02" loading="lazy" onerror="this.remove()"><span class="no">ROOM 02</span></div>
+      <div class="room-tile"><div class="ph"><span>ROOM 03</span><span>PHOTO</span></div><img src="4bfb8120-6fc0-4ba5-b9d4-3262d0a17f38.png" alt="ホテル ヴィラ 客室 03" loading="lazy" onerror="this.remove()"><span class="no">ROOM 03</span></div>
+      <div class="room-tile"><div class="ph"><span>ROOM 04</span><span>PHOTO</span></div><img src="rooms/room04.jpg" alt="ホテル ヴィラ 客室 04" loading="lazy" onerror="this.remove()"><span class="no">ROOM 04</span></div>
+      <div class="room-tile"><div class="ph"><span>ROOM 05</span><span>PHOTO</span></div><img src="rooms/room05.jpg" alt="ホテル ヴィラ 客室 05" loading="lazy" onerror="this.remove()"><span class="no">ROOM 05</span></div>
+      <div class="room-tile"><div class="ph"><span>ROOM 06</span><span>PHOTO</span></div><img src="rooms/room06.jpg" alt="ホテル ヴィラ 客室 06" loading="lazy" onerror="this.remove()"><span class="no">ROOM 06</span></div>
+      <div class="room-tile"><div class="ph"><span>ROOM 07</span><span>PHOTO</span></div><img src="rooms/room07.jpg" alt="ホテル ヴィラ 客室 07" loading="lazy" onerror="this.remove()"><span class="no">ROOM 07</span></div>
+      <div class="room-tile"><div class="ph"><span>ROOM 08</span><span>PHOTO</span></div><img src="rooms/room08.jpg" alt="ホテル ヴィラ 客室 08" loading="lazy" onerror="this.remove()"><span class="no">ROOM 08</span></div>
+      <div class="room-tile"><div class="ph"><span>ROOM 09</span><span>PHOTO</span></div><img src="rooms/room09.jpg" alt="ホテル ヴィラ 客室 09" loading="lazy" onerror="this.remove()"><span class="no">ROOM 09</span></div>
+      <div class="room-tile"><div class="ph"><span>ROOM 10</span><span>PHOTO</span></div><img src="rooms/room10.jpg" alt="ホテル ヴィラ 客室 10" loading="lazy" onerror="this.remove()"><span class="no">ROOM 10</span></div>
+      <div class="room-tile"><div class="ph"><span>ROOM 11</span><span>PHOTO</span></div><img src="rooms/room11.jpg" alt="ホテル ヴィラ 客室 11" loading="lazy" onerror="this.remove()"><span class="no">ROOM 11</span></div>
+      <div class="room-tile"><div class="ph"><span>ROOM 12</span><span>PHOTO</span></div><img src="rooms/room12.jpg" alt="ホテル ヴィラ 客室 12" loading="lazy" onerror="this.remove()"><span class="no">ROOM 12</span></div>
+      <div class="room-tile"><div class="ph"><span>ROOM 13</span><span>PHOTO</span></div><img src="rooms/room13.jpg" alt="ホテル ヴィラ 客室 13" loading="lazy" onerror="this.remove()"><span class="no">ROOM 13</span></div>
+      <div class="room-tile"><div class="ph"><span>ROOM 14</span><span>PHOTO</span></div><img src="rooms/room14.jpg" alt="ホテル ヴィラ 客室 14" loading="lazy" onerror="this.remove()"><span class="no">ROOM 14</span></div>
+      <div class="room-tile"><div class="ph"><span>ROOM 15</span><span>PHOTO</span></div><img src="rooms/room15.jpg" alt="ホテル ヴィラ 客室 15" loading="lazy" onerror="this.remove()"><span class="no">ROOM 15</span></div>
+      <div class="room-tile"><div class="ph"><span>ROOM 16</span><span>PHOTO</span></div><img src="rooms/room16.jpg" alt="ホテル ヴィラ 客室 16" loading="lazy" onerror="this.remove()"><span class="no">ROOM 16</span></div>
+      <div class="room-tile"><div class="ph"><span>ROOM 17</span><span>PHOTO</span></div><img src="rooms/room17.jpg" alt="ホテル ヴィラ 客室 17" loading="lazy" onerror="this.remove()"><span class="no">ROOM 17</span></div>
+      <div class="room-tile"><div class="ph"><span>ROOM 18</span><span>PHOTO</span></div><img src="rooms/room18.jpg" alt="ホテル ヴィラ 客室 18" loading="lazy" onerror="this.remove()"><span class="no">ROOM 18</span></div>
+      <div class="room-tile"><div class="ph"><span>ROOM 19</span><span>PHOTO</span></div><img src="rooms/room19.jpg" alt="ホテル ヴィラ 客室 19" loading="lazy" onerror="this.remove()"><span class="no">ROOM 19</span></div>
+    </div>
+    <p class="room-note">※お部屋の空き状況によりご希望に添えない場合がございます。</p>
+    <div class="room-info-box" style="margin-top:32px;">
+      <h3>快適なプライベートルーム</h3>
+      <p>隅々まで丁寧に清掃が行き届いた、明るく過ごしやすいお部屋。心地よい広さのベッドと充実した設備を完備し、リピーターのお客様からも「一番落ち着くプライベート空間」として大変ご好評をいただいております。</p>
+    </div>
+  </div>
+</section>
 
-      <div class="room-info-box">
-        <h3>快適なプライベートルーム</h3>
-        <p>隅々まで丁寧に清掃が行き届いた、明るく過ごしやすいお部屋。どこか懐かしさを感じるレトロでアットホームな雰囲気が魅力です。心地よい広さのベッドと充実した設備を完備し、リピーターのお客様からも「一番落ち着くプライベート空間」として大変ご好評をいただいております。</p>
+<!-- FOOD -->
+<section id="food">
+  <div class="container">
+    <span class="section-label">Food Menu</span>
+    <h2 class="section-title">フードメニュー</h2>
+    <div class="food-layout">
+      <img class="food-img" src="food-menu-hp.png" alt="ホテルヴィラ 奈良大和高田 フードメニュー" loading="lazy">
+      <div>
+        <ul class="food-list">
+          <li><span>ビーフカレー</span><b>650円</b></li>
+          <li><span>チキンカレー</span><b>750円</b></li>
+          <li><span>エビピラフ</span><b>500円</b></li>
+          <li><span>カルボナーラ</span><b>550円</b></li>
+          <li><span>ミートスパゲティー</span><b>550円</b></li>
+          <li><span>醤油ラーメン</span><b>650円</b></li>
+          <li><span>鍋焼きうどん</span><b>750円</b></li>
+          <li><span>きつねうどん</span><b>650円</b></li>
+          <li><span>からあげ</span><b>650円</b></li>
+          <li><span>たこ焼き</span><b>650円</b></li>
+          <li><span>ソーセージ5種盛り</span><b>650円</b></li>
+        </ul>
+        <div class="food-bf">宿泊予約のお客様に朝食無料！<small>トースト・バター／コーンスープ／ゆで卵</small></div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- RESERVE -->
+<section id="reserve">
+  <div class="container">
+    <span class="section-label">Reservation</span>
+    <h2 class="section-title">ご予約はこちら</h2>
+    <div class="ninzu inline">
+      <div class="t">2名様でも<b>3名様</b>でも、<br>人数で<b>料金は変わりません！</b></div>
+      <div class="s">追加料金なしで最大3名様までご利用OK</div>
+    </div>
+    <div class="reserve-grid" style="margin-top:36px;">
+      <div class="reserve-card main">
+        <span class="tag-rec">おすすめ</span>
+        <h3>お電話でのご予約</h3>
+        <p>お電話での予約を随時承っております。当日のご連絡も大歓迎です。24時間年中無休で受付しています。</p>
+        <a class="btn btn-tel" href="tel:0745225520">📞 0745-22-5520</a>
+      </div>
+      <div class="reserve-card">
+        <h3>カップルズで予約</h3>
+        <p>カップルズ上で空室・プランを確認してそのままネット予約できます。</p>
+        <a class="btn btn-couples" href="https://couples.jp/hotel-details/53732/plan" target="_blank" rel="noopener">カップルズで予約する</a>
+      </div>
+      <div class="reserve-card">
+        <h3>ハッピーホテルで予約</h3>
+        <p>ハッピーホテルからもネット予約・ホテル情報のご確認いただけます。</p>
+        <a class="btn btn-happy" href="https://happyhotel.jp/hotels/611918" target="_blank" rel="noopener">ハッピーホテルで予約する</a>
+      </div>
+    </div>
+
+    <div class="couples-about">
+      <h3>「カップルズ」とは？</h3>
+      <p>カップルズは、全国のラブホテル・レジャーホテルを検索・予約できる情報サイトです。ホテル ヴィラの写真・口コミ・料金・クーポン・地図などをまとめてご覧いただけます。</p>
+      <ul class="couples-points">
+        <li>お部屋の写真・360度画像をチェック</li>
+        <li>実際にご利用された方の口コミを確認</li>
+        <li>料金表・クーポン情報をいつでも確認</li>
+        <li>空室を見ながらネット予約（カップルズ予約）</li>
+      </ul>
+      <div class="couples-links">
+        <a href="https://couples.jp/hotel-details/53732" target="_blank" rel="noopener">ホテルページ</a>
+        <a href="https://couples.jp/hotel-details/53732/room" target="_blank" rel="noopener">写真</a>
+        <a href="https://couples.jp/hotel-details/53732/review" target="_blank" rel="noopener">口コミ</a>
+        <a href="https://couples.jp/hotel-details/53732/coupon" target="_blank" rel="noopener">クーポン</a>
+        <a href="https://couples.jp/hotel-details/53732/plan" target="_blank" rel="noopener">予約</a>
+      </div>
+    </div>
+    <p class="age-note">※当ホテルは18歳未満の方はご利用いただけません。 ※3名様までご利用可能（追加料金なし）。</p>
   </div>
 </section>
 
@@ -746,7 +1046,7 @@
       </div>
       <div class="appeal-card">
         <h3>丁寧な清掃とサービス</h3>
-        <p>歴史ある建物ですが、スタッフが心を込めてきっちりと清鎖を行っており、清潔で明るい環境でお客様をお迎えいたします。</p>
+        <p>歴史ある建物ですが、スタッフが心を込めてきっちりと清掃を行っており、清潔で明るい環境でお客様をお迎えいたします。</p>
       </div>
     </div>
   </div>
@@ -767,6 +1067,8 @@
         <dd>近鉄南大阪線「浮孔駅」より徒歩約15分<br>JR和歌山線「高田駅」よりお車で約8分</dd>
         <dt>お車でお越しの方</dt>
         <dd>南阪奈道路「葛城IC」より約10分</dd>
+        <dt>周辺</dt>
+        <dd>車で3分でイオンモール橿原。明日香・橿原エリアの観光・ドライブの拠点にも。</dd>
         <dt>駐車場</dt>
         <dd>無料駐車場 19台完備（ハイルーフ車は不可）</dd>
       </dl>
@@ -787,12 +1089,17 @@
   <p>24時間年中無休で、スタッフが丁寧に対応いたします</p>
   <a class="cta-tel" href="tel:0745225520">0745-22-5520</a>
   <p class="cta-tel-note">※お掛け間違いにご注意ください</p>
+  <div class="hero-cta">
+    <a class="btn btn-couples" href="https://couples.jp/hotel-details/53732/plan" target="_blank" rel="noopener">カップルズで予約</a>
+    <a class="btn btn-happy" href="https://happyhotel.jp/hotels/611918" target="_blank" rel="noopener">ハッピーホテルで予約</a>
+  </div>
 </div>
 
 <!-- FOOTER -->
 <footer>
   <div class="footer-logo">ホテル ヴィラ</div>
   <p>〒635-0041 奈良県大和高田市田井466-4 TEL: 0745-22-5520</p>
+  <p style="margin-top:10px;">当ホテルは18歳未満の方はご利用いただけません。 ｜ <a href="https://couples.jp/hotel-details/53732" target="_blank" rel="noopener" style="color:var(--primary);">カップルズ</a></p>
   <p style="margin-top:10px; opacity: 0.6;">© VILLA. All rights reserved.</p>
 </footer>
 
