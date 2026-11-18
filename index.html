@@ -566,6 +566,22 @@
   .ninzu .t b { background:var(--gold-grad); -webkit-background-clip:text; background-clip:text; color:transparent; font-size:1.25em; }
   .ninzu .s { margin-top:6px; font-family:'Noto Sans JP',sans-serif; font-size:.8rem; color:var(--primary-light); }
   .ninzu.inline { margin:36px auto 0; }
+
+  /* 特別価格（取り消し線＋割引価格） */
+  .special-ribbon { display:flex; align-items:center; justify-content:center; gap:10px; flex-wrap:wrap; margin-top:30px; font-weight:700; color:#fff; }
+  .special-ribbon span { font-size:clamp(.95rem,2.6vw,1.2rem); letter-spacing:.08em; }
+  .special-ribbon b { font-size:clamp(1.2rem,3.4vw,1.6rem); padding:4px 22px; border-radius:50px; color:#fff; background:linear-gradient(90deg,var(--red-deep),var(--red),var(--red-deep)); border:1px solid var(--primary); box-shadow:0 0 18px rgba(179,18,43,.6); letter-spacing:.2em; }
+  .plan-col .old::after { content:"▼"; display:block; font-size:.7rem; color:#ff4d63; line-height:1.2; margin-top:2px; }
+  .plan-col .old { font-family:'Noto Sans JP',sans-serif; margin-top:6px; font-size:clamp(1rem,2.8vw,1.25rem); font-weight:700; color:var(--text-muted); }
+  .plan-col .old s { text-decoration:line-through; text-decoration-color:#ff4d63; text-decoration-thickness:3px; display:inline-block; }
+  .plan-col .old .yen { font-size:.7em; margin-left:1px; }
+  .plan-col .p { margin-top:0; }
+  .plan-col .off { display:inline-block; margin-top:6px; font-family:'Noto Sans JP',sans-serif; font-size:.78rem; font-weight:700; color:#fff; background:var(--red); padding:2px 12px; border-radius:50px; letter-spacing:.05em; }
+  .tel-guide { margin-top:32px; padding:26px 24px; text-align:center; border:2px dashed var(--primary); border-radius:18px; background:rgba(212,175,55,.06); }
+  .tel-guide .tg-title { font-size:clamp(1.05rem,3vw,1.4rem); color:#fff; font-weight:700; }
+  .tel-guide .tg-title b { color:var(--primary-light); }
+  .tel-guide p { margin:12px 0 18px; font-family:'Noto Sans JP',sans-serif; font-size:.88rem; line-height:1.9; color:var(--text-light); }
+  .tel-guide strong { color:#ffd966; }
 </style>
 </head>
 <body>
@@ -655,23 +671,31 @@
     <h2 class="section-title">リニューアル記念<br><span class="hl">お得な休憩プラン・宿泊プラン</span></h2>
     <span class="same-price">★ 全室同一料金 ★ お好みのお部屋をお選びいただけます</span>
 
+    <div class="special-ribbon"><span>11/16 リニューアルオープン</span><b>特別価格</b></div>
+
     <div class="plan-grid">
       <div class="plan-card rest">
         <div class="plan-head">5時間の休憩プラン<small>お仕事帰り・ドライブ帰りにぴったり</small></div>
         <div class="plan-cols">
-          <div class="plan-col"><div class="d">月〜木</div><div class="p">4,950<span>円</span></div></div>
-          <div class="plan-col"><div class="d">金・土・日・祝・祝前日</div><div class="p">5,400<span>円</span></div></div>
+          <div class="plan-col"><div class="d">月〜木</div><div class="old"><s>4,950</s><span class="yen">円</span></div><div class="p">4,450<span>円</span></div><div class="off">▼ 500円 OFF</div></div>
+          <div class="plan-col"><div class="d">金・土・日・祝・祝前日</div><div class="old"><s>5,400</s><span class="yen">円</span></div><div class="p">4,900<span>円</span></div><div class="off">▼ 500円 OFF</div></div>
         </div>
-        <p class="plan-memo">※メンバー価格はさらにお得（月〜木 ¥4,400／金・土・日・祝・祝前日 ¥4,900）</p>
+        <p class="plan-memo">※お電話でのご予約のお客様が対象の特別価格です</p>
       </div>
       <div class="plan-card stay">
         <div class="plan-head">宿泊プラン<small>20:00〜翌12:00（最大16時間）</small></div>
         <div class="plan-cols">
-          <div class="plan-col"><div class="d">月〜木</div><div class="p">7,500<span>円</span></div></div>
-          <div class="plan-col"><div class="d">金・土・日・祝・祝前日</div><div class="p">7,800<span>円</span></div></div>
+          <div class="plan-col"><div class="d">月〜木</div><div class="old"><s>7,500</s><span class="yen">円</span></div><div class="p">6,500<span>円</span></div><div class="off">▼ 1,000円 OFF</div></div>
+          <div class="plan-col"><div class="d">金・土・日・祝・祝前日</div><div class="old"><s>7,800</s><span class="yen">円</span></div><div class="p">6,800<span>円</span></div><div class="off">▼ 1,000円 OFF</div></div>
         </div>
-        <p class="plan-memo">※ゆったり最大16時間のロングステイ</p>
+        <p class="plan-memo">※ゆったり最大16時間のロングステイ ／ お電話でのご予約のお客様が対象の特別価格です</p>
       </div>
+    </div>
+
+    <div class="tel-guide">
+      <div class="tg-title">📞 この特別価格は<b>お電話でのご予約限定</b>です</div>
+      <p>お電話で<strong>「ホームページを見て電話しました。予約したいです」</strong>とお伝えください。<br>リニューアル特別価格でご案内いたします。</p>
+      <a class="btn btn-tel" href="tel:0745225520">📞 0745-22-5520<small>24時間受付・当日のご連絡も大歓迎</small></a>
     </div>
 
     <div class="bf-banner">
@@ -956,7 +980,7 @@
       <div class="reserve-card main">
         <span class="tag-rec">おすすめ</span>
         <h3>お電話でのご予約</h3>
-        <p>お電話での予約を随時承っております。当日のご連絡も大歓迎です。24時間年中無休で受付しています。</p>
+        <p>お電話での予約を随時承っております。当日のご連絡も大歓迎です。<br><strong style="color:var(--primary);">「ホームページを見て電話しました」とお伝えいただくと、リニューアル特別価格でご案内します。</strong></p>
         <a class="btn btn-tel" href="tel:0745225520">📞 0745-22-5520</a>
       </div>
       <div class="reserve-card">
